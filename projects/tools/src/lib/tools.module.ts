@@ -10,13 +10,7 @@ import {
 
 @NgModule({
   declarations: [],
-  imports: [
-    ArraysTool,
-    DownloadTool,
-    HtmlTextTool,
-    RemoveReplaceOption,
-    TextTool,
-  ],
+  imports: [],
   exports: [],
   providers: [],
 })
