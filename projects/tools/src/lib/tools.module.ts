@@ -6,6 +6,8 @@ import {
   HtmlTextTool,
   RemoveReplaceOption,
   TextTool,
+  RemoveReplaceOptions,
+  ReplaceStrings,
 } from '../public-api';
 
 @NgModule({

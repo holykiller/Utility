@@ -1,5 +1,5 @@
 {
-  "name": "worldsDev-tools",
+  "name": "@worldsdev/tools",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.11",
@@ -7,5 +7,19 @@
   },
   "dependencies": {
     "tslib": "^1.10.0"
-  }
+  },
+  "description": "Utility tools for arrays, text formatting  and download files and others...",
+  "main": "public-api.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utility",
+    "array",
+    "text",
+    "download",
+    "file"
+  ],
+  "author": "abraham sanchez",
+  "license": "ISC"
 }
