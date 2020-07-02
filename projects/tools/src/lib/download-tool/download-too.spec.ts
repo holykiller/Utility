@@ -1,15 +1,15 @@
 import { async, TestBed } from '@angular/core/testing';
-import { DownloadToolService } from './download-tool.service';
+import { DownloadTool } from './download-tool';
 
-describe('DownloadToolService', () => {
-  let service: DownloadToolService;
+describe('DownloadTool', () => {
+  let service: DownloadTool;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({}).compileComponents();
   }));
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(DownloadToolService);
+    service = new DownloadTool();
 
     spyOn(console, 'log');
   });

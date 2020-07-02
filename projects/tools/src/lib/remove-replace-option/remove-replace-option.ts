@@ -1,12 +1,8 @@
-import { Injectable } from '@angular/core';
-import { TextToolService } from '../text-tool/text-tool.service';
+import { TextTool } from '../text-tool/text-tool';
 import { RemoveReplaceOptions } from './interface/remove-replace-options';
 import { ReplaceStrings } from './interface/replace-strings';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class RemoveReplaceOptionService extends TextToolService {
+export class RemoveReplaceOption extends TextTool {
   constructor() {
     super();
   }

@@ -1,14 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ArraysToolService } from './arrays-tool.service';
+import { ArraysTool } from './arrays-tool';
 
-describe('ArraysToolService', () => {
-  let service: ArraysToolService;
+describe('ArraysTool', () => {
+  let service: ArraysTool;
   let numbers;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ArraysToolService);
+    service = new ArraysTool();
     numbers = [1, 2, 3, 4, 5];
     spyOn(console, 'log');
   });
@@ -57,18 +57,13 @@ describe('ArraysToolService', () => {
     let original = [1, 2, 3, 4, 5];
     let doubleArray = service.combine(original, original);
     let originalText = doubleArray.toString();
-    console.info('original : ' + originalText);
-
     let shuffled = service.shuffle(doubleArray);
     let shuffledText = shuffled.toString();
     expect(originalText).not.toEqual(shuffledText);
-    console.info('shuffled : ' + shuffledText);
   });
   it('should combine two arrays', () => {
     let original = [1, 2, 3, 4, 5];
     let doubleArray = service.combine(original, original);
-    console.info('original');
-    console.info(doubleArray);
     expect(doubleArray.length).toBe(original.length * 2);
   });
 });

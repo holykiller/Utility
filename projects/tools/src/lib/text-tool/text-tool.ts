@@ -1,9 +1,6 @@
-import { Injectable, ElementRef } from '@angular/core';
+import { ElementRef } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class TextToolService {
+export class TextTool {
   removedTotal = 0;
 
   constructor() {}

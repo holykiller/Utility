@@ -1,12 +1,12 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { HtmlTextToolService } from './html-text-tool.service';
+import { HtmlTextTool } from './html-text-tool';
 import { ElementRef } from '@angular/core';
-import { MockElementRef } from '../text-tool/text-tool.service.spec';
+import { MockElementRef } from '../text-tool/text-tool.spec';
 import { ReplaceStrings } from '../remove-replace-option/interface/replace-strings';
 
-describe('HtmlToolService', () => {
-  let service: HtmlTextToolService;
+describe('HtmlTool', () => {
+  let service: HtmlTextTool;
   let input: ElementRef<HTMLInputElement>;
   const firstText = 'This is some previews text';
   const link = 'www.google.com';
@@ -28,7 +28,7 @@ describe('HtmlToolService', () => {
   }));
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(HtmlTextToolService);
+    service = new HtmlTextTool();
     input = new MockElementRef(HTMLInputElement);
     spyOn(console, 'log');
   });

@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RemoveReplaceOptionService } from './remove-replace-option.service';
+import { RemoveReplaceOption } from './remove-replace-option';
 import { RemoveReplaceOptions } from './interface/remove-replace-options';
 
 describe('RemoveReplaceOptionService', () => {
-  let service: RemoveReplaceOptionService;
+  let service: RemoveReplaceOption;
   //#region Variables
   const closingEnd: string = '>';
   //Originals
@@ -54,7 +54,7 @@ describe('RemoveReplaceOptionService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RemoveReplaceOptionService);
+    service = new RemoveReplaceOption();
   });
 
   it('should be created', () => {

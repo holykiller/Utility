@@ -1,9 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root',
-})
-export class DownloadToolService {
+export class DownloadTool {
   linkElement = document.createElement('a');
   constructor() {}
 

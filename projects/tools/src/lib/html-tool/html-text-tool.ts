@@ -1,5 +1,5 @@
-import { Injectable, ElementRef } from '@angular/core';
-import { RemoveReplaceOptionService } from '../remove-replace-option/remove-replace-option.service';
+import { ElementRef } from '@angular/core';
+import { RemoveReplaceOption } from '../remove-replace-option/remove-replace-option';
 import { ReplaceStrings } from '../remove-replace-option/interface/replace-strings';
 
 const videoReplace: ReplaceStrings[] = [
@@ -64,10 +64,7 @@ const codeFormateadStart =
   '<div class="code-obj"><pre class="prettyprint linenums codeContainer">';
 const codeFormateadEnd = '</pre></div>';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class HtmlTextToolService extends RemoveReplaceOptionService {
+export class HtmlTextTool extends RemoveReplaceOption {
   constructor() {
     super();
   }

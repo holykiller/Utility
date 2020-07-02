@@ -9,7 +9,19 @@
         "name": "Build Library",
         "singleInstance": true,
         "color": "#32CD32",
-        "command": "ng build tools --prod"
+        "command": "ng build tools --prod --watch"
+      },
+      {
+        "name": "Build file",
+        "singleInstance": true,
+        "color": "#46CAE5",
+        "command": "cd dist/tools && npm pack"
+      },
+      {
+        "name": "Code Coverage",
+        "singleInstance": true,
+        "color": "#E28032",
+        "command": "ng test --code-coverage"
       }
     ]
   }

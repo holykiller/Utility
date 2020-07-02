@@ -1,9 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root',
-})
-export class ArraysToolService {
+export class ArraysTool {
   constructor() {}
   //Move element
   moveElementInArray(array: any[], element: any, newPos: number): void {

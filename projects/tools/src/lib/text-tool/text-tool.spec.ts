@@ -1,10 +1,10 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { TextToolService } from './text-tool.service';
+import { TextTool } from './text-tool';
 import { ElementRef } from '@angular/core';
 export class MockElementRef extends ElementRef {}
-describe('TextToolService', () => {
-  let service: TextToolService;
+describe('TextTool', () => {
+  let service: TextTool;
   let input: ElementRef<HTMLInputElement>;
   const firstText = 'This is some previews text'; //26
   const link = 'www.google.com'; //16
@@ -27,7 +27,7 @@ describe('TextToolService', () => {
   }));
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TextToolService);
+    service = new TextTool();
     input = new MockElementRef(HTMLInputElement);
   });
   afterAll(() => {

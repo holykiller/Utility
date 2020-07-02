@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 
 import {
-  DownloadToolService,
-  ArraysToolService,
-  HtmlTextToolService,
-  RemoveReplaceOptionService,
-  TextToolService,
+  DownloadTool,
+  ArraysTool,
+  HtmlTextTool,
+  RemoveReplaceOption,
+  TextTool,
 } from '../public-api';
 
 @NgModule({
   declarations: [],
-  imports: [],
-  exports: [],
-  providers: [
-    ArraysToolService,
-    DownloadToolService,
-    HtmlTextToolService,
-    RemoveReplaceOptionService,
-    TextToolService,
+  imports: [
+    ArraysTool,
+    DownloadTool,
+    HtmlTextTool,
+    RemoveReplaceOption,
+    TextTool,
   ],
+  exports: [],
+  providers: [],
 })
 export class ToolsModule {}
