@@ -21,7 +21,7 @@
         "name": "Publish file",
         "singleInstance": true,
         "color": "#21C5DF",
-        "command": "cd dist/tools && npm pack"
+        "command": "npm publish"
       },
       {
         "name": "Code Coverage",
